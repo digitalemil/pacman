@@ -85,11 +85,7 @@ async function saveHighscore(name, score, level) {
             console.log("UserID: "+JSON.stringify(userid));       
         }
      
-<<<<<<< HEAD
         let res=await executeQuery(con, "Insert INTO Highscores (userid, score, level, region) values ('"+userid.id+"', "+score+", "+level+", '"+process.env.REGION+"');" );
-=======
-        let res=await executeQuery(con, "Upsert  INTO Highscores (userid, score, level, region) values ('"+userid.id+"', "+score+", "+level+", '"+process.env.REGION+"');" );
->>>>>>> 6db5a591a973aadb7fe9fe127e26235f36e6a38b
         console.log(JSON.stringify(res));
     }
     catch (err) {
