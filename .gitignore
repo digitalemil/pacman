@@ -1,0 +1,6 @@
+secrets
+secrets*
+node_modules
+keep/variables.env
+keep/certs
+keep/certs/*
